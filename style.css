@@ -1,0 +1,94 @@
+/* giving fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+/* declaring variables */
+:root{
+    --primary:rgb(0, 225, 255);
+    --secondary:rgb(146, 221, 211);
+    --background:rgb(238, 227, 227);
+    --text:rgb(128, 125, 125);
+}
+/* glbal setting */
+*{
+    margin: 10px;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/* navigation starts */
+nav{
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+
+
+}
+/* adjustment for the chrip */
+.chirp {
+    margin: 50px 30px;
+    font-size: larger;
+    color: var(--primary);
+    font-style: italic;
+}
+.nav>a{
+    color: var(--text);
+    
+}
+.btn{
+    margin:0 auto;
+    padding:10px;
+    align-items: center;
+    font-size: larger;
+    background-color: var(--primary);
+    border: 0 ;
+    border-radius: 10px;
+    color: #fff;
+}
+.btn>img{
+    margin: auto;
+    display: inline;
+}
+/* navigation ends */
+
+/* body part starts */
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* side image ko lagi  */
+.side-img{
+    width:350px;
+    height: 250px;
+    float: right;
+}
+.side-img>img{
+    width: 100%;
+    height: auto;
+}
+/* text ko lagii */
+.txt {
+    display: flex;
+    justify-content:space-between ;
+    align-items: flex-start;
+    overflow: hidden;
+    word-break: break-all;
+    
+}
+/* learnmore ko lagi */
+button{
+  color: rgb(0, 183, 255);
+  border: none;
+  background-color: #fff;
+ font-size: large;
+}
+/* home part ended */
+/* features part started */
+.features{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
