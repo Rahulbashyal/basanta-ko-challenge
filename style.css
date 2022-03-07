@@ -53,42 +53,61 @@ align-items: baseline;
 }
 /* navigation ends */
 
-/* body part starts */
+/* home part starts */
+
 main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: var(--background);
+    margin: 20px;
+    padding:5px;
 }
-/* side image ko lagi  */
-.side-img{
-    width:350px;
-    height: 250px;
+/* side ko image */
+.home>img{
+    height: 320px;
+    width: 250px;
     float: right;
 }
-.side-img>img{
-    width: 100%;
-    height: auto;
+
+/* text ko lagi */
+.home>h1{
+    text-decoration: none;
+    text-transform: capitalize;
 }
-/* text ko lagii */
-.txt {
-    display: flex;
-    justify-content:space-between ;
-    align-items: flex-start;
-    overflow: hidden;
-    word-break: break-all;
-    
+p{
+    text-transform: capitalize;
 }
-/* learnmore ko lagi */
-button{
-  color: rgb(0, 183, 255);
-  border: none;
-  background-color: #fff;
- font-size: large;
+/* users image */
+.img-cnt{
+  float: left;
+  position: relative;
+  margin-right: -3%;
 }
-/* home part ended */
-/* features part started */
+/* muni patti ko lorem */
+/* .home:nth-child(){
+    margin: 50px;
+    background-color:green;
+} */
+.img-container + p{
+    margin: 50px;
+    background-color:green;
+}
+/* bosy ends */
+/* features starts */
 .features{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:flex-start;
+    margin: 50px;
+    padding: 20px;
+}
+.tables{
+    display: grid;
+   grid: 100px / auto auto ;
+
+}
+.tables div{
+    margin: 10px;
+    padding: auto;
+    border: 1px solid black;
+    font-size: large;
+}
+
+.tables,h2,p {
+    text-transform: capitalize;
 }
