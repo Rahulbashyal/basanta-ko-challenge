@@ -7,6 +7,7 @@
     --secondary:rgb(146, 221, 211);
     --background:rgb(238, 227, 227);
     --text:rgb(128, 125, 125);
+    --black:black;
 }
 /* glbal setting */
 *{
@@ -56,15 +57,23 @@ align-items: baseline;
 /* home part starts */
 
 main{
-    background-color: var(--background);
     margin: 20px;
     padding:5px;
+}
+.home{
+    background-color: var(--background);
 }
 /* side ko image */
 .home>img{
     height: 320px;
     width: 250px;
     float: right;
+}
+/* witout this codes image chaii background color vnda talla jharxa */
+.home::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* text ko lagi */
@@ -82,32 +91,149 @@ p{
   margin-right: -3%;
 }
 /* muni patti ko lorem */
-/* .home:nth-child(){
-    margin: 50px;
-    background-color:green;
-} */
 .img-container + p{
-    margin: 50px;
-    background-color:green;
+    margin: 20px;
+    margin-top: 1px 2px ;
+    height: 50px;
+    width: 70%;
+    display: flex;
+    justify-items:flex-start;
+    align-items: center;
 }
-/* bosy ends */
+/* same lorem ma blue color add */
+p>span{
+    color: var(--primary);
+}
+/* body ends */
 /* features starts */
-.features{
-    margin: 50px;
-    padding: 20px;
+section + .features{
+    margin:120px;
+    padding: 12px;
 }
-.tables{
-    display: grid;
-   grid: 100px / auto auto ;
-
-}
-.tables div{
-    margin: 10px;
-    padding: auto;
-    border: 1px solid black;
-    font-size: large;
-}
-
-.tables,h2,p {
+/* heading part */
+section,h2{
     text-transform: capitalize;
+    font-size: larger;
+    font-weight: 500px;
 }
+/* heading vanda muni patti ko smater part */
+h2>span{
+    display: flex;   
+}
+/* image size */
+.img>img{
+    height: 60px;
+}
+/* 4 box part */
+.box{
+    padding: 5px;
+    width: 100%;
+    display: grid;
+    grid: 120px / auto auto;
+    grid-gap: 100px ;
+}
+/* 4 ota box ko border */
+.img {
+    border: 1px solid;
+    height: 190px;
+}
+/* end of features */
+/* start of review part */
+.cus{
+    background-color: var(--secondary);
+}
+.rev{
+    padding: 4rem;
+}
+.rev>h1{
+    display: flex;
+    background-color: var(--secondary);
+    font-weight: 900px;
+}
+/* this part brings the three divs vertically  */
+.rev>*{
+    display:inline-block ;
+    vertical-align: middle;
+    background-color: white;
+}
+/* giving prper height for those boxes */
+.one{
+    width: 300px;
+    height: 280px;
+}
+.two{
+    width: 300px;
+    height: 340px;
+}
+.three{
+    width: 300px;
+    height: 290px;
+}
+/* keeping the twitter logo in right side */
+.log{
+   float: right;
+}
+/* yo chaii likes ko lagi */
+.heart>p{
+    float: left;
+}
+/* yo ferii date ko lagi */
+.heart>span{
+   float: right;
+}
+/* aaba chaii pack walla */
+.pack>*{
+    border: 1px solid orange;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    padding: 0px;
+}
+.pack{
+    border: 2px solid purple;
+    margin: 120px;
+
+}
+.pk{
+   
+    height: 500px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    word-wrap:break-word;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 190px 280px;
+}
+/* yo duita part chaii blue tick laii ra text laii vertically align garauna ho */
+.li{
+    display:flex;
+    align-items: center;
+
+}
+.li>span{
+    padding: 10px;
+}
+
+.pk>.btn{
+    border: 3px solid green;
+   
+
+}
+
+/* end of comments part */
+/* last footer part */
+footer{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+   justify-content: space-between;
+align-items: baseline;
+background-color: var(--secondary);
+}
+/* end of css */
